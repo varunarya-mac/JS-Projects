@@ -1,7 +1,4 @@
-All the Project use only (No frontend frameworks like Angular, React)
-a) JS
-b) Html
-c) CSS
+All the Project use only: JS, Html, CSS. (No use of frontend frameworks like Angular, React)
 
 
 # JS-Rrojects list:
