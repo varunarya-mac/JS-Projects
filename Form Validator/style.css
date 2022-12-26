@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+:root {
+    --success-color: rgb(7, 241, 7) ;
+    --error-color: red;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Opan Sans' sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9fafb;
+}
+
+.form {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.form__control {
+    position: relative;
+    width: 400px;
+    height: 60px;
+    font-size: 14px;
+    margin-top:20px;
+}
+
+.form__control label{
+    display: block;
+    
+    color: #777;
+    margin-bottom: 5px; 
+}
+
+.form__control input{
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #777;       
+}
+
+.form__control input:focus{
+    outline: 0;   
+}
+
+.form__control.success input{
+    border: 1px solid var(--success-color);
+}
+
+.form__control.error input{
+    border: 1px solid var(--error-color);
+}
+
+.form__control small{
+    visibility: hidden;
+    color: var(--error-color);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+.form__control.error small{
+    visibility: visible;
+}
+
+button{
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 14px;
+    padding: 5px;
+    background-color: rgb(25, 126, 219);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
