@@ -66,7 +66,6 @@ function validatePassword (pass1, pass2) {
     validateLength(pass2);
 
     if (pass1.value !== pass2.value) {
-        console.log('--------------');
         showError(pass2, `${pass2.id} value should be same as above`);
     }
 }
