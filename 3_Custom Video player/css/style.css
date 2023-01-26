@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+.video {
+  width: 30%;
+  height: 60vh;
+  background-color: grey;
+  margin-top: 20px;
+}
+
+.control {
+  display: flex;
+  width: 30%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: grey;
+  padding: 10px;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  margin-right: 5px;
+  
+}
+
+.fa-play {
+  color: green;
+}
+
+.fa-stop {
+  color: red;
+}
+
+.fa-pause {
+  color: white;
+}
+
+.range {
+  object-fit: cover;
+  margin: 0 5px;
+  
+}
