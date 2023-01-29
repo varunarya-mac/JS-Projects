@@ -1,0 +1,172 @@
+:root {
+  --primary-color: rgb(70, 34, 161);
+  --secondary-color: rgb(189, 48, 221);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-size: 14px;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  height: 100vh;
+  width: 20%;
+  position: absolute;
+  background-color: var(--primary-color);
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-20vw);
+}
+
+.nav.shownav {
+  transform: translateX(0vw);
+  z-index: 100;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+
+.logo img {
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+}
+
+nav ul {
+  margin-top: 80px;
+  list-style: none;
+}
+
+nav ul li {
+  padding: 20px 10px;
+  width: 90%;
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+nav ul li:first-of-type {
+  border-top: 2px solid var(--secondary-color);
+}
+
+.item {
+  color: white;
+  text-decoration: none;
+}
+
+.header {
+  width: 100%;
+  height: 25vh;
+  background-color: var(--primary-color);
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  color: aliceblue;
+}
+
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+.btn {
+  background-color: var(--secondary-color);
+  border: none;
+  padding: 5px;
+  border-radius: 3px;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn-toggle {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 110;
+}
+
+.main-container {
+  max-width: 100%;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  /* transform: scale(0); */
+}
+
+.modal.showmodal {
+  display: block;
+  /* transform: scale(1); */
+}
+
+.modal-container {
+  position: absolute;
+
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  animation-name: modalopen;
+  animation-duration: 1s;
+}
+
+@keyframes modalopen {
+    from {
+        opacity: 0;
+      }
+    
+      to {
+        opacity: 1;
+      }
+}
+
+.modal-title {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.btn-close {
+  background-color: transparent;
+  color: white;
+  position: fixed;
+  right: 10px;
+  top: 5px;
+}
+
+.form {
+  padding: 20px;
+}
+
+.field {
+  margin: 10px 0;
+}
+
+.inputfield {
+  display: block;
+}
