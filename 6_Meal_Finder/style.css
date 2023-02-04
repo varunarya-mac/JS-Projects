@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background-color: rgb(131, 90, 3,0.8);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.searchfield {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchfield input{
+    padding: 5px;
+    border: none;
+    background-color: beige;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.btn {
+    padding: 5px;
+    border: none;
+    background-color: beige;
+    cursor: pointer;
+ 
+}
+input[type='text'],
+.btn:focus {
+    outline-color: transparent;
+    outline-width: 0;
+  
+}
+
+.btn-search {
+   
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.btn-random {
+    border-radius: 2px;
+    border-radius: 2px;
+    margin-left: 10px;
+}
+
+
+.meals {
+    display: grid;
+    margin: 50px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width:800px;
+    width: 100%; 
+    height: auto;
+    max-height: 50vh;
+    max-height: 500px;
+    overflow: scroll;
+    
+}
+
+.result{
+    margin:0;
+    padding: 10px; 
+}
+
+.mealthumbnail .meal-item {
+    max-width: 150px;
+    max-height: 150px;
+}
+.mealthumbnail {
+    position: relative;
+}
+.mealthumbnail .item-caption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 150px;
+    width: 150px;
+    opacity: 0;
+    transition: opacity .3s ease-in;    
+    
+    
+}
+
+.mealthumbnail:hover .item-caption {
+    opacity: 1;
+}
+
+.single-meal {
+    margin: 30px auto;
+    width: 70%;
+  }
+  
+  .single-meal img {
+    width: 300px;
+    margin: 15px;
+    border: 4px #fff solid;
+    border-radius: 2px;
+  }
+  
+  .single-meal-info {
+    margin: 20px;
+    padding: 10px;
+    border: 2px #e09850 dashed;
+    border-radius: 5px;
+  }
+  
+  .single-meal p {
+    margin: 0;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+  }
+  
+  .single-meal ul {
+    padding-left: 0;
+    list-style-type: none;
+  }
+  
+  .single-meal ul li {
+    border: 1px solid #ededed;
+    border-radius: 5px;
+    background-color: #fff;
+    display: inline-block;
+    color: #2d2013;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+    margin: 0 5px 5px 0;
+  }
