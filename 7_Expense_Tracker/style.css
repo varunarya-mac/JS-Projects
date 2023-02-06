@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0, 0.24),
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    margin: 70px 0;
+    width: 30%;
+}
+
+h4 {
+    font-weight: lighter;
+}
+
+h4, h1 {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.inc-exp-container {
+    display: flex;
+    background-color: rgba(179, 170, 170, 0.1);
+
+    box-shadow: var(--box-shadow);
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px  0;
+}
+
+.inc-exp-container p {
+    margin: 0;
+    padding: 0;
+}
+
+.inc-exp-container > div {
+    margin: 20px 0;
+    flex: 1;
+    text-align: center;
+}
+
+.inc-exp-container > div:first-of-type {
+   border-right: 1px solid rgb(144, 140, 140);
+}
+
+.money {
+    font-weight: bold;
+}
+
+.plus {
+    color: green;
+}
+
+.minus {
+    color: orangered;
+}
+
+.history,
+.transaction {
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(214, 212, 212);
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    max-height: 20vh;
+    height: auto;
+    overflow-y: scroll;
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+    background-color: rgba(179, 170, 170, 0.1);
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.list-item:hover .deleteBtn {
+    opacity: 1;
+}
+
+.list-item span {
+    flex: 1;
+}
+
+.list-item span:last-of-type {
+    text-align: end;
+    padding-right: 10px ;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.deleteBtn {
+    /* position: absolute; */
+    /* top: 20%;
+    left: -20px; */
+    flex-basis: 20px;
+    background-color: rgb(206, 56, 56);
+    transition: opacity .3s ease-in;
+    opacity: 0;
+    border: none;
+    color: white;
+}
+
+
+.exp {
+    border-right: 3px solid orangered;
+}
+
+.inc {
+    border-right: 3px solid green;
+}
+
+.form {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.form-control {
+    width: inherit;
+}
+.form-control label,
+.form-control input {
+    display: block;
+    width: 100%;
+    margin: 5px;
+}
+.form-control input {
+border: 1px solid lightgray;
+font-size: 16px;
+border-radius: 5px;}
+
+.form-control input:focus {
+    outline: 0;
+}
+
+.submit {
+    margin: 10px 5px;
+    display: block;
+    width: 100%;
+    background-color: blueviolet;
+    color: aliceblue;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
