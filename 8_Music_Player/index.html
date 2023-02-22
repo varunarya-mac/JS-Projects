@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Music Player</title>
+  </head>
+  <body>
+    <h2 class="title">Music Player</h2>
+
+    <div id="container" class="music_container">
+      <div class="music_info">
+        <h4 id="songname" class="song">hey</h4>
+        <progress value="0" id="progress" max="100"></progress>
+      </div>
+
+      <div class="image_container">
+        <image id="icon" class="image" src="./Images/ukulele.jpg"></image>
+      </div>
+
+      <audio id="musicplayer" src=""></audio>
+
+      <div class="navigation">
+        <div id="forward" class="btn btn-backward">
+          <i class="fa fa-backward"></i>
+        </div>
+        <div id="play" class="btn btn-play"><i class="fa fa-play"></i></div>
+        <div id="backward" class="btn btn-forward">
+          <i class="fa fa-forward"></i>
+        </div>
+      </div>
+    </div>
+
+    
+  </body>
+  <script src="./script.js"></script>
+</html>
