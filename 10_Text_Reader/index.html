@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text_Reader</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2 class="title" id="title">Speech Text Reader</h2>
+        <button class="btn toggle" id="toggle">Read Custom Message</button>
+        <div class="grid">
+           
+        </div>
+
+        <div class="message__box">
+            <button class="cancel__btn">X</button>
+            <label for="voices">Choose Voice</label>
+            <select  class="select" id="voicelist"></select>
+
+            <textarea class="message" id="message" rows="4"></textarea>
+            <button id="readBtn" class="btn">Read Text</button>
+        </div>
+
+    </div>
+
+
+<script src="./script.js"></script>
+</body>
+</html>
