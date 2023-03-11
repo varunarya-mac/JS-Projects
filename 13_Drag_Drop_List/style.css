@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    max-height: 100vh;
+    overflow:scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-color: rgb(197, 196, 196);
+}
+
+
+ul {
+    width: 25%;
+    border: 2px solid rgba(0,0,0,0.3);
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+}
+
+li:not(:last-of-type) {
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+li.over {
+    background-color: rgb(124, 121, 126);
+}
+
+.number {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: grey;
+    /* border: 1px solid rgba(0,0,0,0.3); */
+
+}
+
+.draggable-item {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.draggable-item.wrong {
+    color: orangered;
+    border: 1px solid orangered;
+}
+
+.draggable-item.correct {
+    color: rgb(25, 156, 2);
+    border: 1px solid rgb(23, 147, 2);
+}
+
+.draggable-item p {
+    flex: 80%;
+    margin-left: 10px ;
+}
+
+.draggable-item i {
+    flex-basis: 20%;
+}
+
+.btn {
+    margin: 2rem 0;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.289);
+    color: aliceblue;
+    border: none;
+    padding: 10px;
+    scale: 1;
+    transition: all .3s ease-in-out;
+}
+
+.btn:active {
+    outline: 0;
+    scale: 0.8;
+}
