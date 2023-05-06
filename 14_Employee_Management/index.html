@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Employee Management</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Employee Management</h1>
+      <button id="addbtn">Add Employee</button>
+    </header>
+    <main>
+      <div class="employee">
+        <div class="employee__list">
+          <span class="heading">Employee List</span>
+          <div id="list"></div>
+        </div>
+        <div class="employee__detail">
+            <span class="heading">Employee Detail</span>
+            <div id="detail" class="detail">
+                <img alt="icon missing" id="icon" class="image"/>
+                <h2 id="username"></h2>
+                <p id="email"></p>
+                <p>Mobile: <span id="mobile"></span></p>
+                <p>DOB: <span id="dob"></span></p>
+            </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="formcontainer">
+        <!-- <h2>Add New User</h2> -->
+        <form class="form">
+            <input id="firstname" name="firstname" placeholder="First Name" type="text" required />
+            <input id="lastname" name="lastname" placeholder="Last Name" type="text" required/>
+            <input id="age" name="age" placeholder="Age" type="number" max="100"/>
+            <input id="dob" name="dob" placeholder="Dob" type="date"/>
+            <input id="email" name="email" placeholder="Email Id" type="email" required/>
+            <input id="mobile" name="mobile" placeholder="Mobile (optional)" type="number"/>
+            <input id="iconurl" name="iconurl" placeholder="Image url/path (optional)" type="url"/>
+            <input id="submitbtn" type="submit">
+        </form>
+
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
